@@ -406,7 +406,7 @@ function confetti(){
 function showVerdict(passed,pct,n,timeUp){
   const v=$('verd'); v.className='verd '+(passed?'pass':'fail');
   $('vBadge').innerHTML=passed?CHECK:CROSS;
-  $('vTitle').textContent=passed?'مبروك، نجحت!':'رح ترسب يا خالي';
+  $('vTitle').textContent=passed?'مبروك، نجحت':'رح ترسب خالي';
   $('vMsg').textContent=(timeUp?'انتهى الوقت. ':'')+(passed?'علامتك ممتازة، كمّل هيك.':'راجع أخطاءك وجرّب مرة ثانية.');
   $('vScore').textContent=AR(run.ok);$('vOf').textContent=' / '+AR(n);
   $('vLine').textContent='علامة النجاح '+AR(PASS)+'٪، وانت جبت '+AR(pct)+'٪';
